@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purple WiFi Splash Page Generator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <h1>Purple WiFi Splash Page Generator</h1>
+    <form action="{{ url_for('main.upload') }}" method="post" enctype="multipart/form-data">
+        <label for="image">Upload Image:</label>
+        <input type="file" name="image" id="image">
+        <br>
+        <label for="url">Or Enter Website URL:</label>
+        <input type="text" name="url" id="url">
+        <br>
+        <button type="submit">Generate</button>
+    </form>
+</body>
+</html>

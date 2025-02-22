@@ -1,0 +1,9 @@
+Flask
+Pillow
+colorgram.py
+beautifulsoup4
+lxml
+requests
+Jinja2
+cssutils
+python-dotenv
